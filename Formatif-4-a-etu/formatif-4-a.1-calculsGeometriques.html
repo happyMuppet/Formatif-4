@@ -1,0 +1,43 @@
+<html lang="fr">
+<head>
+    <meta charset=UTF-8>
+    <title>Formatif 4-a.1 - Calculs géométriques</title>
+    <link rel="stylesheet" href="css/formatif-4-a.1.css"/>
+</head>
+<body>
+<h1>Formatif 4-a.1 - Calculs géométriques</h1>
+<div>
+    <fieldset>
+        <legend>Formulaire pour calculer l'aire ou le périmètre de formes</legend>
+        <div class="divFormulaire">
+            <label for="valeursFormes">Entrez ici les valeurs selon l'exemple, pour faire les calculs :</label>
+            <p class="exemples">exemple : "c" pour cercle et "r" pour rectangle<br/>
+            <blockquote class="exemples">c 23<br/>r 23 46<br/>r 21 67<br/>c 67</blockquote>
+            </p>
+            <textarea id="valeursFormes" placeholder="Entrez vos valeurs ici selon l'exemple"></textarea>
+
+            <p><input type="radio" name="choixDeCalcul" id="radioCalculerAire" value="calculerAire" checked>
+                <label for="radioCalculerAire">Calculer l'aire</label><br>
+                <input type="radio" name="choixDeCalcul" id="radioCalculerPerimetre" value="calculerPerimetre">
+                <label for="radioCalculerPerimetre">Calculer le périmètre</label><br>
+                <input type="radio" name="choixDeCalcul" id="radioCalculerLesDeux" value="calculerLesDeux">
+                <label for="radioCalculerLesDeux">Calculer l'aire et le perimetre</label><br>
+            </p>
+        </div>
+        <button id="btnCalculer">Calculer</button>
+        <button id="btnVider">Vider la saisie</button>
+        <span>&emsp;</span>
+        <button id="btnRemplir">Remplir le champ de saisie <label class="exemples">(pour les tests)</label></button>
+    </fieldset>
+
+</div>
+<div class="divReponse">
+    <p><label id="resultats"></label></p>
+</div>
+
+
+<script type="text/javascript" src="js/classes/Cercle.js" defer></script>
+<script type="text/javascript" src="js/classes/Rectangle.js" defer></script>
+<script type="text/javascript" src="js/calculsGeometriques.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.exemples {
+    color: darkgoldenrod;
+    width: auto;
+}
+
+
+.divFormulaire {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divReponse {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFE933;
+}
+
+fieldset {
+    padding: 10px;
+    background: lightblue;
+}
+
+legend {
+    padding: 3px;
+    font-variant: small-caps;
+    color: blue;
+    font-family: verdana;
+}
+
+label {
+    width: 300px;
+    display: inline-block;
+    vertical-align: center;
+    font-style: normal;
+    font-family: verdana;
+}
+#resultats{
+    width: 100%;
+    margin: 10px;
+}
+
+button{
+    font-size: 100%;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border-color: lightblue;
+    padding: 5px;
+}
+
+textarea {
+    height: 150px;
+    width: 250px;
+    font-size: 130%;
+}
