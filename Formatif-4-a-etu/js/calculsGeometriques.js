@@ -54,15 +54,24 @@ function creerTabObjetForme(tabString) {
         */
         let tableauCaractere = element.split(" ");
 
-        if(tableauCaractere.includes("r" || "R")){
-            if(!isNaN(tableauCaractere[1]) && !isNaN(tableauCaractere[2])){
-                tabObjets.push(new Rectangle(tableauCaractere[1], tableauCaractere[2]));
+        if(element != ""){
+            if(tableauCaractere.includes("r" || "R")){
+                if(!isNaN(tableauCaractere[1]) && !isNaN(tableauCaractere[2])){
+                    tabObjets.push(new Rectangle(tableauCaractere[1], tableauCaractere[2]));
+                }
+            } else if (tableauCaractere.includes("c" || "C")){
+                if(!isNaN(tableauCaractere[1])){
+                    tabObjets.push(new Cercle(tableauCaractere[1]));
+                }
+            } else {
+                // N'est pas valide car la chaine ne contient pas les caracteres c ou r.
             }
-        } else if (tableauCaractere.includes("c" || "C")){
-            if(!isNaN(tableauCaractere[1])){
-                tabObjets.push(new Cercle(tableauCaractere[1]));
-            }
+
+        } else {
+            // N'est pas valide car la chaine est vide!
         }
+
+
     }
     return tabObjets;
 }
