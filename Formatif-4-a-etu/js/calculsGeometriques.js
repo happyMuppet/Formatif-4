@@ -70,8 +70,6 @@ function creerTabObjetForme(tabString) {
         } else {
             // N'est pas valide car la chaine est vide!
         }
-
-
     }
     return tabObjets;
 }

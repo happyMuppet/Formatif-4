@@ -8,25 +8,59 @@
 <body>
 <h1>Convertisseur de monnaie</h1>
 
-<!-- Le "table" est votre "frame" de base. À vous de le compléter -->
 <table>
     <tr>
         <td colspan="4">Montant :
+            <input type="text" id="montant" value="0.00">
         </td>
     </tr>
     <tr>
         <td class="colCenter">De</td>
-        <td id="de"></td>
+        <td id="de">
+            <p>
+            <input type="radio" name="montantDe" id="radioDeCan" checked>
+            <label for="radioDeCan">dollars (CAN)</label><br>
+            <input type="radio" name="montantDe" id="radioDeUsd">
+            <label for="radioDeUsd">dollars (USD)</label><br>
+            <input type="radio" name="montantDe" id="radioDeEur">
+            <label for="radioDeEur">euros (EUR)</label><br>
+            <input type="radio" name="montantDe" id="radioDeMxn">
+            <label for="radioDeMxn">pesos (MXN)</label><br>
+            <input type="radio" name="montantDe" id="radioDeGbp">
+            <label for="radioDeGbp">livres (GPB)</label>
+            </p>
+        </td>
         <td class="colCenter">Vers</td>
-        <td id="vers"></td>
+        <td id="vers">
+            <p>
+            <input type="radio" name="montantVers" id="radioVersCan" checked>
+            <label for="radioVersCan">dollars (CAN)</label><br>
+            <input type="radio" name="montantVers" id="radioVersUsd">
+            <label for="radioVersUsd">dollars (USD)</label><br>
+            <input type="radio" name="montantVers" id="radioVersEur">
+            <label for="radioVersEur">euros (EUR)</label><br>
+            <input type="radio" name="montantVers" id="radioVersMxn">
+            <label for="radioVersMxn">pesos (MXN)</label><br>
+            <input type="radio" name="montantVers" id="radioVersGbp">
+            <label for="radioVersGbp">livres (GPB)</label>
+            </p>
+        </td>
     </tr>
     <tr>
         <td class="colCenter" colspan="4">
+            <input type="button" id="btnCalculer" value="Calculer la conversion" >
+<!--            <button id="btnVider">Vider la saisie</button>-->
+<!--            <button id="btnSaisir">Ajouter saisie</button>-->
         </td>
     </tr>
 </table>
 
 <div id="resultat">
+    <img id="drapeauDe">
+    <img id="fleche">
+    <img id="drapeauVers">
+    <p id="messageFinal"></p>
+
 </div>
 
 <script type="text/javascript" src="js/classes/monnaie.js"></script>
