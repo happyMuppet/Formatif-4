@@ -33,13 +33,13 @@ function creerTableauMonnaie(){
 
     tabMonnaie.push(new Monnaie("Canada", "Dollar (CAN)", 1.0));
         tabMonnaie[tabMonnaie.length - 1].drapeau =  "img/CAN.png";
-    tabMonnaie.push(new Monnaie("État-Unis", "Dollar (USD)", 1.32578));
-        tabMonnaie[tabMonnaie.length - 1].drapeau = "img/USR.png";
-    tabMonnaie.push(new Monnaie("Europe", "Euro (EUR)", 1.45840));
+    tabMonnaie.push(new Monnaie("État-Unis", "Dollar (USD)", 1.36));
+        tabMonnaie[tabMonnaie.length - 1].drapeau = "img/USD.png";
+    tabMonnaie.push(new Monnaie("Europe", "Euro (EUR)", 1.32));
         tabMonnaie[tabMonnaie.length - 1].drapeau = "img/EUR.png";
-    tabMonnaie.push(new Monnaie("Mexique", "Pesos (MXN)", 1.65210));
+    tabMonnaie.push(new Monnaie("Mexique", "Pesos (MXN)", 0.067));
         tabMonnaie[tabMonnaie.length - 1].drapeau = "img/MXN.png";
-    tabMonnaie.push(new Monnaie("Angleterre", "Dollar (CAN)", 0.061));
+    tabMonnaie.push(new Monnaie("Angleterre", "Dollar (CAN)", 1.48));
         tabMonnaie[tabMonnaie.length - 1].drapeau = "img/GBP.png";
 
     return tabMonnaie;

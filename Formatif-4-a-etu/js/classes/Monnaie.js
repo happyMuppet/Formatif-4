@@ -45,7 +45,7 @@ class Monnaie {
     }
 
     calculerDevise(montant, deviseVers){
-        return montant * (this.taux/ deviseVers.taux)
+        return (montant * (this.taux/ deviseVers.taux));
     }
 
 
